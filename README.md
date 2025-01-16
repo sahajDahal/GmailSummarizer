@@ -71,5 +71,3 @@ This tool ensures simplicity and privacy by keeping your data secure within your
 
 ---
 
-## ✅ You're All Set!
-Run the scripts manually the first time to test them, and check your inbox for a daily summary email. Enjoy staying organized with GmailSummarizer!
