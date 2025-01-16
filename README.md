@@ -1,6 +1,16 @@
 # GmailSummarizer
 
-🌟 Summarize your emails and receive a daily digest. Designed for efficiency and simplicity, it helps you stay on top of your communications without having to sift through countless messages. Uses OpenAI API to generate summaries.
+🌟 **GmailSummarizer** helps you manage your inbox efficiently by summarizing emails and delivering a concise daily digest straight to your inbox. By leveraging Google Apps Script and OpenAI API, this tool automates the process of extracting, summarizing, and emailing key details from your Gmail account.
+
+## 📝 Overview of Steps:
+1. **Set up a Google Sheet** to store and organize email summaries.
+2. **Use Google Apps Script** to extract emails from your Gmail account and summarize them using the OpenAI API.
+3. **Run the scripts manually** or schedule them to run automatically via triggers.
+4. Receive a **daily summary email** with key details from your messages.
+
+This tool ensures simplicity and privacy by keeping your data secure within your Google account while utilizing OpenAI API for accurate and concise summarization.
+
+---
 
 ## 🚀 Features:
 - **Automated Email Summaries**: Parses your Gmail inbox daily to identify key messages and summarize them.
@@ -38,7 +48,17 @@
 
 ---
 
-### **Step 3: Set Up Triggers**
+### **Step 3: Run the Scripts**
+1. Verify you have **unread emails** from 11 AM the previous day.
+2. Run **`ExtractAndSummarize.gs`**:
+   - A security warning will appear. Click **Continue**, then select **Advanced**, and press **Allow** to grant permissions.
+3. Run **`SendSummaryToMe.gs`**:
+   - Follow the same steps to allow permissions.
+4. Check your inbox to confirm the summary email is delivered.
+
+---
+
+### **Step 4: Set Up Triggers**
 1. Schedule the scripts to run automatically:
    - Open **Apps Script** and navigate to **Triggers**.
    - Set up the **`ExtractAndSummarize`** function to run daily between **10:00 AM - 11:00 AM**. Use the following reference:
